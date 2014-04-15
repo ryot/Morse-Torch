@@ -29,7 +29,7 @@
 
 +(NSDictionary *)morseDict
 {
-    return @{@" ": @"       ", //morse spaces between words are 7 units, represented by whitespace for now
+    return @{//: @"       ", //morse spaces between words are 7 units, rather than the 3 between letters. #TODO figure out where I should factor this in.
              @"A": @".-",
              @"B": @"-...",
              @"C": @"-.-.",
