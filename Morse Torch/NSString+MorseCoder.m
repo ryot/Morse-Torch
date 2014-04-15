@@ -11,20 +11,19 @@
 @implementation NSString (MorseCoder)
 
 -(NSArray *)morseThisString {
-    NSString *capitalizedString = [self capitalizedString];
     NSDictionary *morseDict = [NSString morseDict];
     NSMutableArray *morseArray = [NSMutableArray new];
     NSString *prevChar;
-    for (int i; i < capitalizedString.length; i++) {
-        unichar thisChar = [capitalizedString characterAtIndex:i];
+    for (int i = 0; i < self.length; i++) {
+        unichar thisChar = [self characterAtIndex:i];
         NSString *thisCharString = [NSString stringWithFormat:@"%c", thisChar];
-        NSString *thisCharMorseValue = [morseDict objectForKey:thisCharString];
+        NSString *thisCharMorseValue = [morseDict objectForKey:[thisCharString capitalizedString]];
         if (thisCharMorseValue) {
             [morseArray addObject:thisCharMorseValue];
         }
         prevChar = thisCharString;
     }
-    return morseArray;
+    return [NSArray arrayWithArray:morseArray];
 }
 
 +(NSDictionary *)morseDict
