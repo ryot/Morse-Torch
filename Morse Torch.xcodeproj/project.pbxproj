@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA43FEC218FC7CC1002B9890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC118FC7CC1002B9890 /* Foundation.framework */; };
+		FA43FEC418FC7CC1002B9890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC318FC7CC1002B9890 /* CoreGraphics.framework */; };
+		FA43FEC618FC7CC1002B9890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC518FC7CC1002B9890 /* UIKit.framework */; };
+		FA43FECC18FC7CC1002B9890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA43FECA18FC7CC1002B9890 /* InfoPlist.strings */; };
+		FA43FECE18FC7CC1002B9890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43FECD18FC7CC1002B9890 /* main.m */; };
+		FA43FED218FC7CC1002B9890 /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43FED118FC7CC1002B9890 /* RTAppDelegate.m */; };
+		FA43FED518FC7CC1002B9890 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43FED318FC7CC1002B9890 /* Main_iPhone.storyboard */; };
+		FA43FED818FC7CC1002B9890 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA43FED618FC7CC1002B9890 /* Main_iPad.storyboard */; };
+		FA43FEDB18FC7CC1002B9890 /* RTInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43FEDA18FC7CC1002B9890 /* RTInputViewController.m */; };
+		FA43FEDD18FC7CC1002B9890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA43FEDC18FC7CC1002B9890 /* Images.xcassets */; };
+		FA43FEE418FC7CC1002B9890 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEE318FC7CC1002B9890 /* XCTest.framework */; };
+		FA43FEE518FC7CC1002B9890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC118FC7CC1002B9890 /* Foundation.framework */; };
+		FA43FEE618FC7CC1002B9890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC518FC7CC1002B9890 /* UIKit.framework */; };
+		FA43FEEE18FC7CC1002B9890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA43FEEC18FC7CC1002B9890 /* InfoPlist.strings */; };
+		FA43FEF018FC7CC1002B9890 /* Morse_TorchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43FEEF18FC7CC1002B9890 /* Morse_TorchTests.m */; };
+		FA43FEFB18FC8AD9002B9890 /* RTTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43FEFA18FC8AD9002B9890 /* RTTorchButton.m */; };
+		FAD0D86E18FCAC790031F90B /* NSString+MorseCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD0D86D18FCAC790031F90B /* NSString+MorseCoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA43FEE718FC7CC1002B9890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA43FEB618FC7CC1002B9890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA43FEBD18FC7CC1002B9890;
+			remoteInfo = "Morse Torch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA43FEBE18FC7CC1002B9890 /* Morse Torch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morse Torch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA43FEC118FC7CC1002B9890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA43FEC318FC7CC1002B9890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA43FEC518FC7CC1002B9890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA43FEC918FC7CC1002B9890 /* Morse Torch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Morse Torch-Info.plist"; sourceTree = "<group>"; };
+		FA43FECB18FC7CC1002B9890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA43FECD18FC7CC1002B9890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA43FECF18FC7CC1002B9890 /* Morse Torch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Morse Torch-Prefix.pch"; sourceTree = "<group>"; };
+		FA43FED018FC7CC1002B9890 /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		FA43FED118FC7CC1002B9890 /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		FA43FED418FC7CC1002B9890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FA43FED718FC7CC1002B9890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FA43FED918FC7CC1002B9890 /* RTInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTInputViewController.h; sourceTree = "<group>"; };
+		FA43FEDA18FC7CC1002B9890 /* RTInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTInputViewController.m; sourceTree = "<group>"; };
+		FA43FEDC18FC7CC1002B9890 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA43FEE218FC7CC1002B9890 /* Morse TorchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morse TorchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA43FEE318FC7CC1002B9890 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA43FEEB18FC7CC1002B9890 /* Morse TorchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Morse TorchTests-Info.plist"; sourceTree = "<group>"; };
+		FA43FEED18FC7CC1002B9890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA43FEEF18FC7CC1002B9890 /* Morse_TorchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Morse_TorchTests.m; sourceTree = "<group>"; };
+		FA43FEF918FC8AD9002B9890 /* RTTorchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTorchButton.h; sourceTree = "<group>"; };
+		FA43FEFA18FC8AD9002B9890 /* RTTorchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTorchButton.m; sourceTree = "<group>"; };
+		FAD0D86C18FCAC790031F90B /* NSString+MorseCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MorseCoder.h"; sourceTree = "<group>"; };
+		FAD0D86D18FCAC790031F90B /* NSString+MorseCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MorseCoder.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA43FEBB18FC7CC1002B9890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43FEC418FC7CC1002B9890 /* CoreGraphics.framework in Frameworks */,
+				FA43FEC618FC7CC1002B9890 /* UIKit.framework in Frameworks */,
+				FA43FEC218FC7CC1002B9890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43FEDF18FC7CC1002B9890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43FEE418FC7CC1002B9890 /* XCTest.framework in Frameworks */,
+				FA43FEE618FC7CC1002B9890 /* UIKit.framework in Frameworks */,
+				FA43FEE518FC7CC1002B9890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA43FEB518FC7CC1002B9890 = {
+			isa = PBXGroup;
+			children = (
+				FA43FEC718FC7CC1002B9890 /* Morse Torch */,
+				FA43FEE918FC7CC1002B9890 /* Morse TorchTests */,
+				FA43FEC018FC7CC1002B9890 /* Frameworks */,
+				FA43FEBF18FC7CC1002B9890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA43FEBF18FC7CC1002B9890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FEBE18FC7CC1002B9890 /* Morse Torch.app */,
+				FA43FEE218FC7CC1002B9890 /* Morse TorchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA43FEC018FC7CC1002B9890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FEC118FC7CC1002B9890 /* Foundation.framework */,
+				FA43FEC318FC7CC1002B9890 /* CoreGraphics.framework */,
+				FA43FEC518FC7CC1002B9890 /* UIKit.framework */,
+				FA43FEE318FC7CC1002B9890 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA43FEC718FC7CC1002B9890 /* Morse Torch */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FED018FC7CC1002B9890 /* RTAppDelegate.h */,
+				FA43FED118FC7CC1002B9890 /* RTAppDelegate.m */,
+				FA43FED318FC7CC1002B9890 /* Main_iPhone.storyboard */,
+				FA43FED618FC7CC1002B9890 /* Main_iPad.storyboard */,
+				FA43FED918FC7CC1002B9890 /* RTInputViewController.h */,
+				FA43FEDA18FC7CC1002B9890 /* RTInputViewController.m */,
+				FA43FEF918FC8AD9002B9890 /* RTTorchButton.h */,
+				FA43FEFA18FC8AD9002B9890 /* RTTorchButton.m */,
+				FAD0D86C18FCAC790031F90B /* NSString+MorseCoder.h */,
+				FAD0D86D18FCAC790031F90B /* NSString+MorseCoder.m */,
+				FA43FEDC18FC7CC1002B9890 /* Images.xcassets */,
+				FA43FEC818FC7CC1002B9890 /* Supporting Files */,
+			);
+			path = "Morse Torch";
+			sourceTree = "<group>";
+		};
+		FA43FEC818FC7CC1002B9890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FEC918FC7CC1002B9890 /* Morse Torch-Info.plist */,
+				FA43FECA18FC7CC1002B9890 /* InfoPlist.strings */,
+				FA43FECD18FC7CC1002B9890 /* main.m */,
+				FA43FECF18FC7CC1002B9890 /* Morse Torch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA43FEE918FC7CC1002B9890 /* Morse TorchTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FEEF18FC7CC1002B9890 /* Morse_TorchTests.m */,
+				FA43FEEA18FC7CC1002B9890 /* Supporting Files */,
+			);
+			path = "Morse TorchTests";
+			sourceTree = "<group>";
+		};
+		FA43FEEA18FC7CC1002B9890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA43FEEB18FC7CC1002B9890 /* Morse TorchTests-Info.plist */,
+				FA43FEEC18FC7CC1002B9890 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA43FEBD18FC7CC1002B9890 /* Morse Torch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA43FEF318FC7CC1002B9890 /* Build configuration list for PBXNativeTarget "Morse Torch" */;
+			buildPhases = (
+				FA43FEBA18FC7CC1002B9890 /* Sources */,
+				FA43FEBB18FC7CC1002B9890 /* Frameworks */,
+				FA43FEBC18FC7CC1002B9890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Morse Torch";
+			productName = "Morse Torch";
+			productReference = FA43FEBE18FC7CC1002B9890 /* Morse Torch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA43FEE118FC7CC1002B9890 /* Morse TorchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA43FEF618FC7CC1002B9890 /* Build configuration list for PBXNativeTarget "Morse TorchTests" */;
+			buildPhases = (
+				FA43FEDE18FC7CC1002B9890 /* Sources */,
+				FA43FEDF18FC7CC1002B9890 /* Frameworks */,
+				FA43FEE018FC7CC1002B9890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA43FEE818FC7CC1002B9890 /* PBXTargetDependency */,
+			);
+			name = "Morse TorchTests";
+			productName = "Morse TorchTests";
+			productReference = FA43FEE218FC7CC1002B9890 /* Morse TorchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA43FEB618FC7CC1002B9890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ryo Tulman";
+				TargetAttributes = {
+					FA43FEE118FC7CC1002B9890 = {
+						TestTargetID = FA43FEBD18FC7CC1002B9890;
+					};
+				};
+			};
+			buildConfigurationList = FA43FEB918FC7CC1002B9890 /* Build configuration list for PBXProject "Morse Torch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA43FEB518FC7CC1002B9890;
+			productRefGroup = FA43FEBF18FC7CC1002B9890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA43FEBD18FC7CC1002B9890 /* Morse Torch */,
+				FA43FEE118FC7CC1002B9890 /* Morse TorchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA43FEBC18FC7CC1002B9890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43FED818FC7CC1002B9890 /* Main_iPad.storyboard in Resources */,
+				FA43FEDD18FC7CC1002B9890 /* Images.xcassets in Resources */,
+				FA43FED518FC7CC1002B9890 /* Main_iPhone.storyboard in Resources */,
+				FA43FECC18FC7CC1002B9890 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43FEE018FC7CC1002B9890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43FEEE18FC7CC1002B9890 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA43FEBA18FC7CC1002B9890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD0D86E18FCAC790031F90B /* NSString+MorseCoder.m in Sources */,
+				FA43FEFB18FC8AD9002B9890 /* RTTorchButton.m in Sources */,
+				FA43FED218FC7CC1002B9890 /* RTAppDelegate.m in Sources */,
+				FA43FEDB18FC7CC1002B9890 /* RTInputViewController.m in Sources */,
+				FA43FECE18FC7CC1002B9890 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA43FEDE18FC7CC1002B9890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA43FEF018FC7CC1002B9890 /* Morse_TorchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA43FEE818FC7CC1002B9890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA43FEBD18FC7CC1002B9890 /* Morse Torch */;
+			targetProxy = FA43FEE718FC7CC1002B9890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA43FECA18FC7CC1002B9890 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA43FECB18FC7CC1002B9890 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA43FED318FC7CC1002B9890 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA43FED418FC7CC1002B9890 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FA43FED618FC7CC1002B9890 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA43FED718FC7CC1002B9890 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FA43FEEC18FC7CC1002B9890 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA43FEED18FC7CC1002B9890 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA43FEF118FC7CC1002B9890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA43FEF218FC7CC1002B9890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA43FEF418FC7CC1002B9890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morse Torch/Morse Torch-Prefix.pch";
+				INFOPLIST_FILE = "Morse Torch/Morse Torch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA43FEF518FC7CC1002B9890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morse Torch/Morse Torch-Prefix.pch";
+				INFOPLIST_FILE = "Morse Torch/Morse Torch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA43FEF718FC7CC1002B9890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Morse Torch.app/Morse Torch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morse Torch/Morse Torch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Morse TorchTests/Morse TorchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA43FEF818FC7CC1002B9890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Morse Torch.app/Morse Torch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Morse Torch/Morse Torch-Prefix.pch";
+				INFOPLIST_FILE = "Morse TorchTests/Morse TorchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA43FEB918FC7CC1002B9890 /* Build configuration list for PBXProject "Morse Torch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA43FEF118FC7CC1002B9890 /* Debug */,
+				FA43FEF218FC7CC1002B9890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA43FEF318FC7CC1002B9890 /* Build configuration list for PBXNativeTarget "Morse Torch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA43FEF418FC7CC1002B9890 /* Debug */,
+				FA43FEF518FC7CC1002B9890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA43FEF618FC7CC1002B9890 /* Build configuration list for PBXNativeTarget "Morse TorchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA43FEF718FC7CC1002B9890 /* Debug */,
+				FA43FEF818FC7CC1002B9890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA43FEB618FC7CC1002B9890 /* Project object */;
+}
