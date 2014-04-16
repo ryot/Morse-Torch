@@ -23,22 +23,36 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         UIFont *font = [UIFont boldSystemFontOfSize:[UIFont buttonFontSize]];
-        UIColor* textColor = [UIColor colorWithRed:0.701 green:0.957 blue:1.000 alpha:1.000];
+        UIColor* textColor = [UIColor colorWithRed:0.000 green:0.427 blue:0.832 alpha:1.000];
         NSDictionary *attrs = @{ NSForegroundColorAttributeName : textColor,
                                  NSFontAttributeName : font,
                                  NSTextEffectAttributeName : NSTextEffectLetterpressStyle};
         NSAttributedString* attrString = [[NSAttributedString alloc] initWithString:@"Torch It!" attributes:attrs];
         [self setAttributedTitle:attrString forState:UIControlStateNormal];
-
-        font = [UIFont boldSystemFontOfSize:[UIFont buttonFontSize]];
-        textColor = [UIColor colorWithRed:1.000 green:0.947 blue:0.726 alpha:1.000];
-        attrs = @{ NSForegroundColorAttributeName : textColor,
-                                 NSFontAttributeName : font,
-                                 NSTextEffectAttributeName : NSTextEffectLetterpressStyle};
-        attrString = [[NSAttributedString alloc] initWithString:@"Torch It!" attributes:attrs];
-        [self setAttributedTitle:attrString forState:UIControlStateHighlighted];
     }
     return self;
+}
+
+-(void)setInverted:(BOOL)inverted
+{
+    _inverted = inverted;
+    if (_inverted) {
+        UIFont *font = [UIFont boldSystemFontOfSize:[UIFont buttonFontSize]];
+        UIColor *textColor = [UIColor colorWithRed:0.725 green:0.024 blue:0.000 alpha:1.000];
+        NSDictionary *attrs = @{ NSForegroundColorAttributeName : textColor,
+                   NSFontAttributeName : font,
+                   NSTextEffectAttributeName : NSTextEffectLetterpressStyle};
+        NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"TORCHING" attributes:attrs];
+        [self setAttributedTitle:attrString forState:UIControlStateNormal];
+    } else {
+        UIFont *font = [UIFont boldSystemFontOfSize:[UIFont buttonFontSize]];
+        UIColor* textColor = [UIColor colorWithRed:0.000 green:0.427 blue:0.832 alpha:1.000];
+        NSDictionary *attrs = @{ NSForegroundColorAttributeName : textColor,
+                                 NSFontAttributeName : font,
+                                 NSTextEffectAttributeName : NSTextEffectLetterpressStyle};
+        NSAttributedString* attrString = [[NSAttributedString alloc] initWithString:@"Torch It!" attributes:attrs];
+        [self setAttributedTitle:attrString forState:UIControlStateNormal];
+    }
 }
 
 - (void)drawRect:(CGRect)rect
@@ -115,10 +129,7 @@
             [color11 setStroke];
             roundedRectanglePath.lineWidth = 3;
             [roundedRectanglePath stroke];
-            
         }
-        
-        
         //// Cleanup
         CGGradientRelease(linearGradient);
         CGColorSpaceRelease(colorSpace);
@@ -194,17 +205,11 @@
             [color11 setStroke];
             roundedRectanglePath.lineWidth = 3;
             [roundedRectanglePath stroke];
-            
         }
-        
-        
         //// Cleanup
         CGGradientRelease(linearGradient);
         CGColorSpaceRelease(colorSpace);
-        
-
     }
-
 }
 
 

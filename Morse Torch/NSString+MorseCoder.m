@@ -19,6 +19,10 @@
         NSString *thisCharString = [NSString stringWithFormat:@"%c", thisChar];
         NSString *thisCharMorseValue = [morseDict objectForKey:[thisCharString capitalizedString]];
         if (thisCharMorseValue) {
+            if ([thisCharString  isEqualToString:@" "] && [thisCharString isEqualToString:prevChar]) {
+                prevChar = thisCharString;
+                continue; //skip extra spaces
+            }
             [morseArray addObject:thisCharMorseValue];
         }
         prevChar = thisCharString;
@@ -28,7 +32,7 @@
 
 +(NSDictionary *)morseDict
 {
-    return @{//: @"       ", //morse spaces between words are 7 units, rather than the 3 between letters. #TODO figure out where I should factor this in.
+    return @{@" ": @"wordSpace", //morse spaces between words are 7 units, rather than the 3 between letters. #TODO figure out where I should factor this in.
              @"A": @".-",
              @"B": @"-...",
              @"C": @"-.-.",

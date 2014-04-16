@@ -11,5 +11,6 @@
 @interface NSString (MorseCoder)
 
 -(NSArray *)morseThisString;
++(NSDictionary *)morseDict;
 
 @end
