@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2B537818FDC8CA000BF0E3 /* mochaGrunge_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2B537618FDC8CA000BF0E3 /* mochaGrunge_@2X.png */; };
+		FA2B537918FDC8CA000BF0E3 /* mochaGrunge.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2B537718FDC8CA000BF0E3 /* mochaGrunge.png */; };
 		FA43FEC218FC7CC1002B9890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC118FC7CC1002B9890 /* Foundation.framework */; };
 		FA43FEC418FC7CC1002B9890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC318FC7CC1002B9890 /* CoreGraphics.framework */; };
 		FA43FEC618FC7CC1002B9890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43FEC518FC7CC1002B9890 /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA2B537618FDC8CA000BF0E3 /* mochaGrunge_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mochaGrunge_@2X.png"; sourceTree = "<group>"; };
+		FA2B537718FDC8CA000BF0E3 /* mochaGrunge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mochaGrunge.png; sourceTree = "<group>"; };
 		FA43FEBE18FC7CC1002B9890 /* Morse Torch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morse Torch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA43FEC118FC7CC1002B9890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA43FEC318FC7CC1002B9890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +134,8 @@
 				FA43FEFA18FC8AD9002B9890 /* RTTorchButton.m */,
 				FAD0D86C18FCAC790031F90B /* NSString+MorseCoder.h */,
 				FAD0D86D18FCAC790031F90B /* NSString+MorseCoder.m */,
+				FA2B537618FDC8CA000BF0E3 /* mochaGrunge_@2X.png */,
+				FA2B537718FDC8CA000BF0E3 /* mochaGrunge.png */,
 				FA43FEDC18FC7CC1002B9890 /* Images.xcassets */,
 				FA43FEC818FC7CC1002B9890 /* Supporting Files */,
 			);
@@ -242,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2B537818FDC8CA000BF0E3 /* mochaGrunge_@2X.png in Resources */,
 				FA43FED818FC7CC1002B9890 /* Main_iPad.storyboard in Resources */,
+				FA2B537918FDC8CA000BF0E3 /* mochaGrunge.png in Resources */,
 				FA43FEDD18FC7CC1002B9890 /* Images.xcassets in Resources */,
 				FA43FED518FC7CC1002B9890 /* Main_iPhone.storyboard in Resources */,
 				FA43FECC18FC7CC1002B9890 /* InfoPlist.strings in Resources */,
